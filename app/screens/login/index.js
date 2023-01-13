@@ -27,14 +27,14 @@ class Login extends React.PureComponent {
   onLogin = () => {
     const {navigation, login} = this.props;
     const {phoneNumber} = this.state;
-    const params = {
-      phone: phoneNumber,
-    };
-    login(params, res => {
-      if (res) {
+    // const params = {
+    //   phone: phoneNumber,
+    // };
+    // login(params, res => {
+      // if (res) {
         navigation.navigate(SCREENS.VERIFICATION_CODE, {phoneNumber});
-      }
-    });
+    //   }
+    // });
   };
 
   render() {

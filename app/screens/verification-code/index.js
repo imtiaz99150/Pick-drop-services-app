@@ -33,15 +33,15 @@ class VerificationCode extends React.PureComponent {
     const {otp} = this.state;
     const {route, verifyOtp, navigation} = this.props;
     const phone = route?.params?.phoneNumber;
-    const params = {
-      otp: otp,
-      phone: phone,
-    };
-    verifyOtp(params, res => {
-      if (res) {
+    // const params = {
+    //   otp: otp,
+    //   phone: phone,
+    // };
+    // verifyOtp(params, res => {
+    //   if (res) {
         resetRoute(navigation, SCREENS.CHOOSE_CURRENT_DROP_LOCATION);
-      }
-    });
+    //   }
+    // });
   };
 
   render() {

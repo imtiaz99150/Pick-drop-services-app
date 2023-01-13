@@ -1,0 +1,6 @@
+module Pods_Pickkup_PickkupTests {
+  umbrella header "Pods-Pickkup-PickkupTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -25,7 +25,9 @@ const Stack = createStackNavigator();
 
 function AppNavigator() {
   return (
-    <Stack.Navigator screenOptions={{headerShown: false}}>
+    <Stack.Navigator
+    
+     screenOptions={{headerShown: false}}>
       <Stack.Screen name={SCREENS.SPLASH} component={Splash} />
       <Stack.Screen name={SCREENS.ONBOARDING} component={OnBoarding} />
       <Stack.Screen name={SCREENS.CHOOSE_LOCATION} component={ChooseLocation} />
